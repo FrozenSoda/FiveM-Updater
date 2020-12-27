@@ -12,16 +12,17 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 - git
 
 ### Python packages
-**Install with <code>pip3 install \<package\></code>**
+**Install with <code>pip3 install \<package\></code> while signed in to the user that is running your FiveM server**
 - requests
 - beautifulsoup4
 - gitpython
 
 ## Downloading
-1. Install all prerequisites according to the instructions above.
+1. Install the APT prerequisites according to the instructions above, while signed in to a user with root privileges.
 2. Switch to the user owning the FiveM server(s) by using <code>sudo su - \<user\></code>
-3. Navigate to a parent directory of your FiveM server(s), preferably your home directory (<code>cd ~</code>)
-4. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
+3. Install the Python prerequisites according to the instructions above.
+4. Navigate to a parent directory of your FiveM server(s), preferably your home directory (<code>cd ~</code>)
+5. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
 
 ## Usage
 - To update your server, run <code>./fivem-updater.py --server-dir \<your-server-dir\></code>
