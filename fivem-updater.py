@@ -197,7 +197,7 @@ def main(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Update FiveM server effortlessly.')
+    parser = argparse.ArgumentParser(description='Update your FiveM server effortlessly.')
 
     parser.add_argument('--server-dir',
                         help='The full path to the directory where the \'FXServer\' directory resides.')
