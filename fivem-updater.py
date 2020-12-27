@@ -211,7 +211,8 @@ if __name__ == '__main__':
                         help='Your Pushover user key, which you can specify to be notified of errors on your phone.')
     args = parser.parse_args()
 
-    args.server_dir = os.path.expanduser(args.server_dir)
+    if args.server_dir is not None:
+        args.server_dir = os.path.expanduser(args.server_dir)
 
     try:
         import requests
