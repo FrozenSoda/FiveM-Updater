@@ -24,8 +24,8 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 4. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
 
 ## Usage
-- To update your server, run <code>./fivem-updater.py --server-dir \<your-server-dir\></code>\
-- For more information about syntax and arguments, run <code>./fivem-updater.py -h</code>\
+- To update your server, run <code>./fivem-updater.py --server-dir \<your-server-dir\></code>
+- For more information about syntax and arguments, run <code>./fivem-updater.py -h</code>
 - It is recommended that you call the updater from within your server start script.
 
 ### Example Start Script
