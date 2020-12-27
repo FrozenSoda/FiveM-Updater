@@ -18,9 +18,10 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 - gitpython
 
 ## Downloading
-1. Switch to the user owning the FiveM server(s) by using <code>sudo su - \<user\></code>
-2. Navigate to a parent directory of your FiveM server(s), preferably your home directory (<code>cd ~</code>)
-3. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
+1. Install all prerequisites according to the instructions above.
+2. Switch to the user owning the FiveM server(s) by using <code>sudo su - \<user\></code>
+3. Navigate to a parent directory of your FiveM server(s), preferably your home directory (<code>cd ~</code>)
+4. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
 
 ## Usage
 Run <code>./fivem-updater.py -h</code> for syntax and arguments.
