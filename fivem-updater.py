@@ -221,5 +221,6 @@ if __name__ == '__main__':
 
         main(args)
     except Exception as e:
-        pushover(args.pushover_app_token, args.pushover_user_key, str(e), 'FiveM Server Update Failed')
+        if args.pushover_app_token is not None and args.pushover_user_key is not None:
+            pushover(args.pushover_app_token, args.pushover_user_key, str(e), 'FiveM Server Update Failed')
         raise e
