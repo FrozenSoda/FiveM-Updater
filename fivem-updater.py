@@ -198,6 +198,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Update FiveM server effortlessly.')
+
     parser.add_argument('--server-dir',
                         help='The full path to the directory where the \'FXServer\' directory resides.')
     parser.add_argument('--check-only', action='store_true',
@@ -205,10 +206,11 @@ if __name__ == '__main__':
                              'Do not update server binaries nor cfx-server-data.')
     parser.add_argument('--force-update', action='store_true',
                         help='Update server binaries even if the latest build is already installed.')
-    parser.add_argument('--pushover-app-token',
-                        help='Your Pushover app token, which you can specify to be notified of errors on your phone.')
     parser.add_argument('--pushover-user-key',
                         help='Your Pushover user key, which you can specify to be notified of errors on your phone.')
+    parser.add_argument('--pushover-app-token',
+                        help='Your Pushover app token, which you can specify to be notified of errors on your phone.')
+
     args = parser.parse_args()
 
     if args.server_dir is not None:
@@ -221,6 +223,6 @@ if __name__ == '__main__':
 
         main(args)
     except Exception as e:
-        if args.pushover_app_token is not None and args.pushover_user_key is not None:
+        if args.pushover_user_key is not None and args.pushover_app_token is not None:
             pushover(args.pushover_app_token, args.pushover_user_key, str(e), 'FiveM Server Update Failed')
         raise e
