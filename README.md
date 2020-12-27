@@ -26,6 +26,7 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 
 ## Usage
 - To update your server, run <code>./fivem-updater.py --server-dir \<your-server-dir\></code>
+- As the script might break if the FiveM website/packages change, you can be notified via Pushover if it fails. To be notified, specify the arguments <code>--pushover-user-key \<your-user-key\></code> and <code>--pushover-app-token \<your-app-token\></code>
 - For more information about syntax and arguments, run <code>./fivem-updater.py -h</code>
 - It is recommended that you call the updater from within your server start script.
 
