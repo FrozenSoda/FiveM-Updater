@@ -25,7 +25,7 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 
 ## Usage
 Run <code>./fivem-updater.py -h</code> for syntax and arguments.
-It is recommended that you call the updater from within your server start script, that is called by systemd if you are using Ubuntu.
+It is recommended that you call the updater from within your server start script.
 
 ### Example Start Script
 <code>#!/bin/bash</code>\
