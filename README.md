@@ -19,9 +19,9 @@ This script is designed for Linux and has not been tested on, nor designed for, 
 
 ## Downloading
 1. Sign in to a user with sudo privileges.
-2. Install the APT prerequisites according to the instructions above.
+2. Install the required system packages according to the instructions above.
 3. Switch to the user owning the FiveM server(s) by using <code>sudo su - \<user\></code>
-4. Install the Python prerequisites according to the instructions above.
+4. Install the required Python packages according to the instructions above.
 5. Navigate to a parent directory of your FiveM server(s), preferably your home directory (<code>cd ~</code>)
 6. Run <code>git clone https://github.com/steel9/FiveM-Updater.git</code>
 
